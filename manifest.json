@@ -1,0 +1,27 @@
+﻿{
+  "name": "PAX Ticket Site Auto Launcher",
+  "short_name": "PTSAL",
+  "version": "1.0.7",
+  "description": "Automatically Launches the Ticket Site Sent out from PAX_BADGES Twitter Account.",
+  "permissions": [
+  	"background",
+  	"tabs",
+    "notifications",
+    "http://*/*",
+    "https://*/*"
+    ]
+    ,
+   "browser_action": {
+   "default_icon": "webimages/disconnectedIcon.png",
+   "default_popup": "web/popup.html"
+  },
+  "background": {
+		"persistent": true,
+		"scripts": ["jquery.min.js","jquery.signalR-2.2.0.min.js","PaxTicketSaleCheckerSignalR.js","background.js","signalRClient.js"]
+	},
+  "web_accessible_resources": [
+    "webimages/*" , "web/*"
+  ],
+  "icons": { "128": "webimages/connectedIcon.png" },
+  "manifest_version": 2
+}
