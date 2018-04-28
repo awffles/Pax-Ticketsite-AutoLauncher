@@ -11,7 +11,7 @@ exact ticket dates you want.
 
 ### Website
 
-[Currently Down]
+http://spc-g.dynamic-dns.net:8088
 
 ### Client
 
